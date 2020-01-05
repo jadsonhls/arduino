@@ -3,13 +3,13 @@ function AlteraRele1(){
     if(estado === "0"){
         document.getElementById("estado").innerHTML="1";
         document.getElementById("rele").innerHTML="<div class='rele1_ligado'></div>";
-	var x = document.getElementsByClassName("slider round");
+		    var x = document.getElementsByClassName("slider round");
         x[0].innerHTML="<a href='/?desligar'  class='slider round'></a>";
     } else {
         document.getElementById("estado").innerHTML="0";
         document.getElementById("rele").innerHTML="<div class='rele1_desligado'></div>";
-        var x = document.getElementsByClassName("slider round");
-        x[0].innerHTML="<a href='/?ligar' class='slider round'></a>";
+        var xx = document.getElementsByClassName("slider round");
+        xx[0].innerHTML="<a href='/?ligar' class='slider round'></a>";
     }
 }
 
