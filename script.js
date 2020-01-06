@@ -4,12 +4,12 @@ function AlteraRele1(){
         document.getElementById("estado").innerHTML="1";
         document.getElementById("rele").innerHTML="<div class='rele1_ligado'></div>";
 	var x = document.getElementsByClassName("slider");
-        x[0].innerHTML="<a href='/?desligar'  class='slider round'></a>";
+        x[0].innerHTML="<a href='/?desligar' <label class='botao'><input type='checkbox'><span class='slider round'></span></label></a>";
     } else {
         document.getElementById("estado").innerHTML="0";
         document.getElementById("rele").innerHTML="<div class='rele1_desligado'></div>";
         var xx = document.getElementsByClassName("slider");
-        xx[0].innerHTML="<a href='/?ligar' class='slider round'></a>";
+        xx[0].innerHTML="<a href='/?ligar' <label class='botao'><input type='checkbox'><span class='slider round'></span></label></a>";
     }
 }
 
@@ -18,7 +18,7 @@ function AlteraRele2(){
     if(estado_2 === "0"){
         document.getElementById("estado_2").innerHTML="1";
         document.getElementById("rele_2").innerHTML="<div class='rele2_ligado'></div>";
-		    document.getElementById("botao_2").innerHTML="<a href='/?2_desligar' class='botao_2'>Desliga</a>";
+	document.getElementById("botao_2").innerHTML="<a href='/?2_desligar' class='botao_2'>Desliga</a>";
     } else {
         document.getElementById("estado_2").innerHTML="0";
         document.getElementById("rele_2").innerHTML="<div class='rele2_desligado'></div>";
