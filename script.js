@@ -3,11 +3,15 @@ function AlteraRele1(){
     if(estado === "0"){
         document.getElementById("estado").innerHTML="1";
         document.getElementById("rele").innerHTML="<div class='rele1_ligado'></div>";
+        var y = document.getElementsByClassName("botao");
+        y[0].innerHTML="<a href='/?desligar'  class='slider round'></a>";
         var x = document.getElementsByClassName("slider");
         x[0].innerHTML="<a href='/?desligar'  class='slider round'></a>";
     } else {
         document.getElementById("estado").innerHTML="0";
         document.getElementById("rele").innerHTML="<div class='rele1_desligado'></div>";
+        var yy = document.getElementsByClassName("botao");
+        yy[0].innerHTML="<a href='/?ligar' class='slider round'></a>";
         var xx = document.getElementsByClassName("slider");
         xx[0].innerHTML="<a href='/?ligar' class='slider round'></a>";
     }
