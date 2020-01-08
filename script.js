@@ -4,12 +4,12 @@ function AlteraRele1(){
         document.getElementById("estado").innerHTML="1";
         document.getElementById("rele").innerHTML="<div class='rele1_ligado'></div>";
         var x = document.getElementsByClassName("slider");
-        x[0].innerHTML="<a href='/?desligar'  class='slider round+botao'></a>";
+        x[0].innerHTML="<a href='/?desligar'  class='slider round + slideractive'></a>";
     } else {
         document.getElementById("estado").innerHTML="0";
         document.getElementById("rele").innerHTML="<div class='rele1_desligado'></div>";
         var xx = document.getElementsByClassName("slider round");
-        xx[0].innerHTML="<a href='/?ligar' class='slider round + botao'></a>";
+        xx[0].innerHTML="<a href='/?ligar' class='slider round'></a>";
     }
 }
 
