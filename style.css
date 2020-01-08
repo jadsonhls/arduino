@@ -106,12 +106,13 @@ div.rele2_desligado {
   width: 0;
   height: 0;
 }
+
 .slider{
   position: absolute;
   cursor: pointer;
-  top: 0;
+  top: 0px;
   left: 0;
-  right: 0;
+  right: 0px;
   bottom: 0;
   background-color: #ccc;
   -webkit-transition: .4s;
@@ -189,4 +190,17 @@ input:checked + .slider:before {
 .botao_2:active {
 	position:relative;
 	top:1px;
+}
+
+.slideractive::before {
+
+left: 28px !important;
+
+
+}
+
+.slideractive {
+
+background-color: #16adff !important;
+
 }
