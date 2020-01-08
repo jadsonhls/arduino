@@ -5,7 +5,8 @@ function AlteraRele1(){
         document.getElementById("rele").innerHTML="<div class='rele1_ligado'></div>";
         var x = document.getElementsByClassName("slider");
         x[0].innerHTML="<a href='/?desligar'  class='slider round'></a>";
-        document.querySelector(".slider.round").setAttribute("class","slider"+ " round" + " slideractive");
+        var y = document.querySelector(".slider round");
+	    y.setAttribute("slider round", "checked");
     } else {
         document.getElementById("estado").innerHTML="0";
         document.getElementById("rele").innerHTML="<div class='rele1_desligado'></div>";
