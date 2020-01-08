@@ -6,7 +6,7 @@ function AlteraRele1(){
         var x = document.getElementsByClassName("slider");
         x[0].innerHTML="<a href='/?desligar'  class='slider round'></a>";
         var y = document.querySelector(".slider round");
-	    y.setAttribute("slider round", "checked");
+	y.setAttribute("class","slider round"+"slider active");
     } else {
         document.getElementById("estado").innerHTML="0";
         document.getElementById("rele").innerHTML="<div class='rele1_desligado'></div>";
